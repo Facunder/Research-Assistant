@@ -1,6 +1,6 @@
 import openai
 
-# GPT-4生成项目框架和代码
+openai.api_key = "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"
 def generate_project_framework(topic):
     prompt = f"""
     You are an AI project development assistant tasked with generating a complete project framework and basic code based on a specified technical topic (e.g., quantization). Please create the project based on the following requirements:
