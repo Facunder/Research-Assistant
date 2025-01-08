@@ -1,5 +1,5 @@
 import openai
-
+openai.api_key = "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"
 def recommend_research(query):
 
     # 更复杂的提示词，明确要求分开输出每个部分
