@@ -2,7 +2,7 @@ import fitz  # PyMuPDF
 import matplotlib.pyplot as plt
 import openai
 import re
-
+openai.api_key = "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"
 def extract_technologies(text):
     """
     使用GPT-4提取论文中的关键技术
