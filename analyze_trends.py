@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import streamlit as st
 from collections import defaultdict
 
-
+openai.api_key = "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"
 def openai_analysis(titles, year):
     """
     使用 OpenAI 分析特定年份和关键词的研究趋势。
