@@ -1,5 +1,8 @@
 # AI Research Assistant Project
 
+Fudan ME AI Deisgn Project
+Team: Heng Liao, Yuzheng Lin
+
 This project is an AI-powered research assistant designed to interact with arXiv papers and provide various functionalities to help users analyze and gather insights from research papers. It includes features like paper search, deep analysis, trend analysis, research recommendations, and project framework generation.
 
 ## Features
@@ -9,6 +12,20 @@ This project is an AI-powered research assistant designed to interact with arXiv
 3. **Research Recommendations**: Provide suggestions on research directions, methods, and skills based on a specific topic.
 4. **Trend Analysis**: Analyze research trends over time for a given keyword, visualizing the number of papers published each year.
 5. **Project Framework Generation**: Generate a complete project framework and basic code based on a specific technical topic (e.g., quantization).
+
+## Demos
+
+https://github.com/user-attachments/assets/905d0216-d253-4ffb-a3a0-3cebe35d1ad2
+
+https://github.com/user-attachments/assets/3dddf8ce-f68f-4da4-86ea-8a404761e218
+
+https://github.com/user-attachments/assets/cc069488-6e4f-4710-be71-4cd39bc681c6
+
+https://github.com/user-attachments/assets/791b4bf2-146e-40fe-b274-5ae8efd1fad0
+
+
+
+
 
 ## Table of Contents
 
