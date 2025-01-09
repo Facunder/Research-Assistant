@@ -1,162 +1,137 @@
-Title: Localizing AI: Evaluating Open-Weight Language Models for Languages of Baltic States
-Published: 2025-01-07 17:24:17+00:00
-Summary: Although large language models (LLMs) have transformed our expectations of
-modern language technologies, concerns over data privacy often restrict the use
-of commercially available LLMs hosted outside of EU jurisdictions. This limits
-their application in governmental, defence, and other data-sensitive sectors.
-In this work, we evaluate the extent to which locally deployable open-weight
-LLMs support lesser-spoken languages such as Lithuanian, Latvian, and Estonian.
-We examine various size and precision variants of the top-performing
-multilingual open-weight models, Llama~3, Gemma~2, Phi, and NeMo, on machine
-translation, multiple-choice question answering, and free-form text generation.
-The results indicate that while certain models like Gemma~2 perform close to
-the top commercially available models, many LLMs struggle with these languages.
-Most surprisingly, however, we find that these models, while showing close to
-state-of-the-art translation performance, are still prone to lexical
-hallucinations with errors in at least 1 in 20 words for all open-weight
-multilingual LLMs.
+Title: ConceptMaster: Multi-Concept Video Customization on Diffusion Transformer Models Without Test-Time Tuning
+Published: 2025-01-08 18:59:01+00:00
+Summary: Text-to-video generation has made remarkable advancements through diffusion
+models. However, Multi-Concept Video Customization (MCVC) remains a significant
+challenge. We identify two key challenges in this task: 1) the identity
+decoupling problem, where directly adopting existing customization methods
+inevitably mix attributes when handling multiple concepts simultaneously, and
+2) the scarcity of high-quality video-entity pairs, which is crucial for
+training such a model that represents and decouples various concepts well. To
+address these challenges, we introduce ConceptMaster, an innovative framework
+that effectively tackles the critical issues of identity decoupling while
+maintaining concept fidelity in customized videos. Specifically, we introduce a
+novel strategy of learning decoupled multi-concept embeddings that are injected
+into the diffusion models in a standalone manner, which effectively guarantees
+the quality of customized videos with multiple identities, even for highly
+similar visual concepts. To further overcome the scarcity of high-quality MCVC
+data, we carefully establish a data construction pipeline, which enables
+systematic collection of precise multi-concept video-entity data across diverse
+concepts. A comprehensive benchmark is designed to validate the effectiveness
+of our model from three critical dimensions: concept fidelity, identity
+decoupling ability, and video generation quality across six different concept
+composition scenarios. Extensive experiments demonstrate that our ConceptMaster
+significantly outperforms previous approaches for this task, paving the way for
+generating personalized and semantically accurate videos across multiple
+concepts.
 
 --------------------------------------------------
-Title: Exotic elliptic surfaces without 1-handles
-Published: 2025-01-07 16:51:34+00:00
-Summary: In this article, we consider a sufficient condition that a knot surgery or
-log-transformation of $E(n)$ admits a handle decomposition without 1-handles.
-We show that if $K$ is a knot that the bridge number is $b(K)\le 9n$, then the
-knot surgery $E(n)_K$ of an elliptic surface $E(n)$ admits a handle
-decomposition without 1-handles. Furthermore, we also show that the double
-log-transformation $E(n)_{2,q}$ admits a handle decomposition without 1-handles
-for any positive integer $n$ and any odd integer $q$.
+Title: Comparative Analysis of Quantum and Classical Support Vector Classifiers for Software Bug Prediction: An Exploratory Study
+Published: 2025-01-08 18:53:50+00:00
+Summary: Purpose: Quantum computing promises to transform problem-solving across
+various domains with rapid and practical solutions. Within Software Evolution
+and Maintenance, Quantum Machine Learning (QML) remains mostly an underexplored
+domain, particularly in addressing challenges such as detecting buggy software
+commits from code repositories. Methods: In this study, we investigate the
+practical application of Quantum Support Vector Classifiers (QSVC) for
+detecting buggy software commits across 14 open-source software projects with
+diverse dataset sizes encompassing 30,924 data instances. We compare the QML
+algorithm PQSVC (Pegasos QSVC) and QSVC against the classical Support Vector
+Classifier (SVC). Our technique addresses large datasets in QSVC algorithms by
+dividing them into smaller subsets. We propose and evaluate an aggregation
+method to combine predictions from these models to detect the entire test
+dataset. We also introduce an incremental testing methodology to overcome the
+difficulties of quantum feature mapping during the testing approach. Results:
+The study shows the effectiveness of QSVC and PQSVC in detecting buggy software
+commits. The aggregation technique successfully combines predictions from
+smaller data subsets, enhancing the overall detection accuracy for the entire
+test dataset. The incremental testing methodology effectively manages the
+challenges associated with quantum feature mapping during the testing process.
+Conclusion: We contribute to the advancement of QML algorithms in defect
+prediction, unveiling the potential for further research in this domain. The
+specific scenario of the Short-Term Activity Frame (STAF) highlights the early
+detection of buggy software commits during the initial developmental phases of
+software systems, particularly when dataset sizes remain insufficient to train
+machine learning models.
 
 --------------------------------------------------
-Title: Magic Mirror: ID-Preserved Video Generation in Video Diffusion Transformers
-Published: 2025-01-07 16:48:31+00:00
-Summary: We present Magic Mirror, a framework for generating identity-preserved videos
-with cinematic-level quality and dynamic motion. While recent advances in video
-diffusion models have shown impressive capabilities in text-to-video
-generation, maintaining consistent identity while producing natural motion
-remains challenging. Previous methods either require person-specific
-fine-tuning or struggle to balance identity preservation with motion diversity.
-Built upon Video Diffusion Transformers, our method introduces three key
-components: (1) a dual-branch facial feature extractor that captures both
-identity and structural features, (2) a lightweight cross-modal adapter with
-Conditioned Adaptive Normalization for efficient identity integration, and (3)
-a two-stage training strategy combining synthetic identity pairs with video
-data. Extensive experiments demonstrate that Magic Mirror effectively balances
-identity consistency with natural motion, outperforming existing methods across
-multiple metrics while requiring minimal parameters added. The code and model
-will be made publicly available at:
-https://github.com/dvlab-research/MagicMirror/
+Title: RadGPT: Constructing 3D Image-Text Tumor Datasets
+Published: 2025-01-08 18:39:10+00:00
+Summary: With over 85 million CT scans performed annually in the United States,
+creating tumor-related reports is a challenging and time-consuming task for
+radiologists. To address this need, we present RadGPT, an Anatomy-Aware
+Vision-Language AI Agent for generating detailed reports from CT scans. RadGPT
+first segments tumors, including benign cysts and malignant tumors, and their
+surrounding anatomical structures, then transforms this information into both
+structured reports and narrative reports. These reports provide tumor size,
+shape, location, attenuation, volume, and interactions with surrounding blood
+vessels and organs. Extensive evaluation on unseen hospitals shows that RadGPT
+can produce accurate reports, with high sensitivity/specificity for small tumor
+(<2 cm) detection: 80/73% for liver tumors, 92/78% for kidney tumors, and
+77/77% for pancreatic tumors. For large tumors, sensitivity ranges from 89% to
+97%. The results significantly surpass the state-of-the-art in abdominal CT
+report generation.
+  RadGPT generated reports for 17 public datasets. Through radiologist review
+and refinement, we have ensured the reports' accuracy, and created the first
+publicly available image-text 3D medical dataset, comprising over 1.8 million
+text tokens and 2.7 million images from 9,262 CT scans, including 2,947 tumor
+scans/reports of 8,562 tumor instances. Our reports can: (1) localize tumors in
+eight liver sub-segments and three pancreatic sub-segments annotated per-voxel;
+(2) determine pancreatic tumor stage (T1-T4) in 260 reports; and (3) present
+individual analyses of multiple tumors--rare in human-made reports.
+Importantly, 948 of the reports are for early-stage tumors.
 
 --------------------------------------------------
-Title: From Newswire to Nexus: Using text-based actor embeddings and transformer networks to forecast conflict dynamics
-Published: 2025-01-07 16:45:37+00:00
-Summary: This study advances the field of conflict forecasting by using text-based
-actor embeddings with transformer models to predict dynamic changes in violent
-conflict patterns at the actor level. More specifically, we combine newswire
-texts with structured conflict event data and leverage recent advances in
-Natural Language Processing (NLP) techniques to forecast escalations and
-de-escalations among conflicting actors, such as governments, militias,
-separatist movements, and terrorists. This new approach accurately and promptly
-captures the inherently volatile patterns of violent conflicts, which existing
-methods have not been able to achieve. To create this framework, we began by
-curating and annotating a vast international newswire corpus, leveraging
-hand-labeled event data from the Uppsala Conflict Data Program. By using this
-hybrid dataset, our models can incorporate the textual context of news sources
-along with the precision and detail of structured event data. This combination
-enables us to make both dynamic and granular predictions about conflict
-developments. We validate our approach through rigorous back-testing against
-historical events, demonstrating superior out-of-sample predictive power. We
-find that our approach is quite effective in identifying and predicting phases
-of conflict escalation and de-escalation, surpassing the capabilities of
-traditional models. By focusing on actor interactions, our explicit goal is to
-provide actionable insights to policymakers, humanitarian organizations, and
-peacekeeping operations in order to enable targeted and effective intervention
-strategies.
+Title: HyFusion: Enhanced Reception Field Transformer for Hyperspectral Image Fusion
+Published: 2025-01-08 18:22:44+00:00
+Summary: Hyperspectral image (HSI) fusion addresses the challenge of reconstructing
+High-Resolution HSIs (HR-HSIs) from High-Resolution Multispectral images
+(HR-MSIs) and Low-Resolution HSIs (LR-HSIs), a critical task given the high
+costs and hardware limitations associated with acquiring high-quality HSIs.
+While existing methods leverage spatial and spectral relationships, they often
+suffer from limited receptive fields and insufficient feature utilization,
+leading to suboptimal performance. Furthermore, the scarcity of high-quality
+HSI data highlights the importance of efficient data utilization to maximize
+reconstruction quality. To address these issues, we propose HyFusion, a novel
+framework designed to enhance the receptive field and enable effective feature
+map reusing, thereby maximizing data utilization. First, HR-MSI and LR-HSI
+inputs are concatenated to form a quasi-fused draft, preserving complementary
+spatial and spectral details. Next, the Enhanced Reception Field Block (ERFB)
+is introduced, combining shifting-window attention and dense connections to
+expand the receptive field, effectively capturing long-range dependencies and
+reusing features to reduce information loss, thereby boosting data efficiency.
+Finally, the Dual-Coupled Network (DCN) dynamically extracts high-frequency
+spectral and spatial features from LR-HSI and HR-MSI, ensuring efficient
+cross-domain fusion. Extensive experiments demonstrate that HyFusion achieves
+state-of-the-art performance in HR-MSI/LR-HSI fusion, significantly improving
+reconstruction quality while maintaining a compact model size and computational
+efficiency. By integrating enhanced receptive fields and feature map reusing,
+HyFusion provides a practical and effective solution for HSI fusion in
+resource-constrained scenarios, setting a new benchmark in hyperspectral
+imaging. Our code will be publicly available.
 
 --------------------------------------------------
-Title: Optimal Estimation of Temperature
-Published: 2025-01-07 16:43:51+00:00
-Summary: Over the past century, the Boltzmann entropy has been widely accepted as the
-standard definition of entropy for an isolated system. However, it coexists
-with controversial alternatives, such as the Gibbs entropy. These definitions,
-including the Boltzmann entropy, exhibit certain inconsistencies, both
-mathematically and thermodynamically. To address this challenge, we introduce
-the estimation theory in statistical inference into the study of thermodynamics
-and statistical physics for finite-sized systems. By regarding the finite-sized
-system as a thermometer used to measure the temperature of the heat reservoir,
-we show that optimal estimation of temperature yields the corresponding entropy
-formula for an isolated system. In the single-sample case, optimal estimation
-of inverse temperature (or temperature) corresponds to the Boltzmann entropy
-(or Gibbs entropy). These different definitions of entropy, rather than being
-contradictory, apply to optimal estimation of different parameters.
-Furthermore, via the Laplace transform, we identify a complementarity between
-estimation of temperature and system's energy, a concept suggested by Niels
-Bohr. We also correct the energy-temperature uncertainty relation, as expressed
-by the Cram\'{e}r-Rao bound, in the large-$N$ limit. In the multiple-sample
-case, we generalize the definitions of both Boltzmann entropy and Gibbs entropy
-to achieve optimal estimation of temperature, revealing the tight connection
-between statistical inference and Terrell Hill's nanothermodynamics.
-
---------------------------------------------------
-Title: On generalized Mittag-Leffler-type functions of two variables
-Published: 2025-01-07 16:32:36+00:00
-Summary: We aim to study Mittag-Leffler type functions of two variables
-${{D}_{1}}\left( x,y \right),...,{{D}_{5}}\left( x,y \right)$ by analogy with
-the Appell hypergeometric functions of two variables. Moreover, we targeted
-functions ${{E}_{1}}\left( x,y \right),$ $...,{{E}_{10}}\left( x,y \right)$ as
-limiting cases of the functions ${{D}_{1}}\left( x,y \right),$
-$...,{{D}_{5}}\left( x,y \right)$ and studied certain properties, as well.
-Following Horn's method, we determine all possible cases of the convergence
-region of the function ${{D}_{1}}\left( x,y \right).$ Further, for a
-generalized hypergeometric function, ${{D}_{1}}\left( x,y \right)$ (two
-variable Mittag-Leffler-type function) integral representations of the Euler
-type have been proved. One-dimensional and two-dimensional Laplace transforms
-of the function are also defined. We have constructed a system of partial
-differential equations which is linked with the function ${{D}_{1}}\left( x,y
-\right)$.
-
---------------------------------------------------
-Title: Dolphin: Closed-loop Open-ended Auto-research through Thinking, Practice, and Feedback
-Published: 2025-01-07 16:31:10+00:00
-Summary: The scientific research paradigm is undergoing a profound transformation
-owing to the development of Artificial Intelligence (AI). Recent works
-demonstrate that various AI-assisted research methods can largely improve
-research efficiency by improving data analysis, accelerating computation, and
-fostering novel idea generation. To further move towards the ultimate goal
-(i.e., automatic scientific research), in this paper, we propose Dolphin, the
-first closed-loop open-ended auto-research framework to further build the
-entire process of human scientific research. Dolphin can generate research
-ideas, perform experiments, and get feedback from experimental results to
-generate higher-quality ideas. More specifically, Dolphin first generates novel
-ideas based on relevant papers which are ranked by the topic and task
-attributes. Then, the codes are automatically generated and debugged with the
-exception-traceback-guided local code structure. Finally, Dolphin automatically
-analyzes the results of each idea and feeds the results back to the next round
-of idea generation. Experiments are conducted on the benchmark datasets of
-different topics and results show that Dolphin can generate novel ideas
-continuously and complete the experiment in a loop. We highlight that Dolphin
-can automatically propose methods that are comparable to the state-of-the-art
-in some tasks such as 2D image classification and 3D point classification.
-
---------------------------------------------------
-Title: Exploring the Potential of Large Language Models in Public Transportation: San Antonio Case Study
-Published: 2025-01-07 16:18:55+00:00
-Summary: The integration of large language models (LLMs) into public transit systems
-presents a transformative opportunity to enhance urban mobility. This study
-explores the potential of LLMs to revolutionize public transportation
-management within the context of San Antonio's transit system. Leveraging the
-capabilities of LLMs in natural language processing and data analysis, we
-investigate their capabilities to optimize route planning, reduce wait times,
-and provide personalized travel assistance. By utilizing the General Transit
-Feed Specification (GTFS) and other relevant data, this research aims to
-demonstrate how LLMs can potentially improve resource allocation, elevate
-passenger satisfaction, and inform data-driven decision-making in transit
-operations. A comparative analysis of different ChatGPT models was conducted to
-assess their ability to understand transportation information, retrieve
-relevant data, and provide comprehensive responses. Findings from this study
-suggest that while LLMs hold immense promise for public transit, careful
-engineering and fine-tuning are essential to realizing their full potential.
-San Antonio serves as a case study to inform the development of LLM-powered
-transit systems in other urban environments.
+Title: Discrete Wavelet Transform-Based Capsule Network for Hyperspectral Image Classification
+Published: 2025-01-08 17:49:52+00:00
+Summary: Hyperspectral image (HSI) classification is a crucial technique for remote
+sensing to build large-scale earth monitoring systems. HSI contains much more
+information than traditional visual images for identifying the categories of
+land covers. One recent feasible solution for HSI is to leverage CapsNets for
+capturing spectral-spatial information. However, these methods require high
+computational requirements due to the full connection architecture between
+stacked capsule layers. To solve this problem, a DWT-CapsNet is proposed to
+identify partial but important connections in CapsNet for a effective and
+efficient HSI classification. Specifically, we integrate a tailored attention
+mechanism into a Discrete Wavelet Transform (DWT)-based downsampling layer,
+alleviating the information loss problem of conventional downsampling operation
+in feature extractors. Moreover, we propose a novel multi-scale routing
+algorithm that prunes a large proportion of connections in CapsNet. A capsule
+pyramid fusion mechanism is designed to aggregate the spectral-spatial
+relationships in multiple levels of granularity, and then a self-attention
+mechanism is further conducted in a partially and locally connected
+architecture to emphasize the meaningful relationships. As shown in the
+experimental results, our method achieves state-of-the-art accuracy while
+keeping lower computational demand regarding running time, flops, and the
+number of parameters, rendering it an appealing choice for practical
+implementation in HSI classification.
 
 --------------------------------------------------

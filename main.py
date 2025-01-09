@@ -34,14 +34,14 @@ def app():
 
     # 执行深度分析功能
     elif operation == "analyze":
-        pdf_path = st.text_input("Enter PDF path for analysis")
+        uploaded_file = st.file_uploader("Upload a PDF file for analysis", type="pdf")
         if st.button("Analyze"):
-            if pdf_path:
-                analysis = analyze_paper(pdf_path)
+            if uploaded_file is not None:
+                analysis = analyze_paper(uploaded_file)
                 st.write(f"**Technologies:** {analysis['technologies']}")
                 st.write(f"**References:** {analysis['references']}")
             else:
-                st.warning("Please enter the path to a PDF.")
+                st.warning("Please upload a PDF file.")
 
     # 执行研究推荐功能
     elif operation == "recommend":
