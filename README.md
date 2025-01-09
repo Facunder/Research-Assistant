@@ -16,7 +16,6 @@ This project is an AI-powered research assistant designed to interact with arXiv
 - [Modules](#modules)
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
 
 ## Modules
 
@@ -53,7 +52,7 @@ The dependencies include:
 
 ### 3. Set up your OpenAI API key
 
-Visit [OpenAI](https://openai.com/) and create an account if you don't have one. Once you have an API key, replace the `"YOUR_API_KEY"` placeholder in the `recommend_research.py` and `generate_framework.py` files with your actual key.
+We used the api provided by the TA here, and you can replace your key in the `analyze_paper.py`, `analyze_trends.py`, `recommend_research.py` and `generate_framework.py` files.
 
 ## Usage
 
@@ -99,8 +98,3 @@ This will launch a web interface where you can choose between different features
 3. **Get Research Recommendations**: Enter a topic like `machine learning quantization` to get suggestions on methods and skills to explore.
 4. **Visualize Trends**: Track trends over time by analyzing the number of papers published each year in a specific field.
 5. **Generate a Project Framework**: Generate a full project structure and basic code for a topic like `quantization`, including data processing, model building, and testing components.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
